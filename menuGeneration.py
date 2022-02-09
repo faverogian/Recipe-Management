@@ -75,6 +75,7 @@ class weeklyMenuGenerator:
                 category = self.ingredientRef[f"{item}"]
                 self.shoppingList[f"{category}"].append(item)
             except:
+                print(f"Error generating shopping list: {item} not found in database.")
                 pass
     
         # Routine items to check for

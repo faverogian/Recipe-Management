@@ -7,10 +7,10 @@ def createDocument(shoppingList, menu):
 
     today = date.today()
 
-    shoppingTitle = document.add_heading(f"Shopping List: Week of Sunday, {today.strftime('%B')} {today.strftime('%w')}, {today.strftime('%Y')}", 0)
+    shoppingTitle = document.add_heading(f"Shopping List: Week of Sunday, {today.strftime('%B')} {today.strftime('%d')}, {today.strftime('%Y')}", 0)
     shoppingTitle.alignment = 1
 
-    keys = ["Meats", "Poultry", "Dairy", "Vegetables", "Bakery", "Pastas", "Frozen", "Spices", "Snacks", "Other"]
+    keys = ["Meats", "Poultry", "Dairy", "Vegetables", "Bakery", "Pastas", "Spices", "Snacks", "Other"]
 
     for key in keys:
         keyText = document.add_paragraph().add_run(f"{key}")
@@ -23,7 +23,7 @@ def createDocument(shoppingList, menu):
 
     document.add_page_break()
 
-    menuTitle = document.add_heading(f"Menu: Week of {today.strftime('%A')}, {today.strftime('%B')} {today.strftime('%w')}, {today.strftime('%Y')}", 0)
+    menuTitle = document.add_heading(f"Menu: Week of {today.strftime('%A')}, {today.strftime('%B')} {today.strftime('%d')}, {today.strftime('%Y')}", 0)
     menuTitle.alignment = 1
 
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
