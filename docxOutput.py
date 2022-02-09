@@ -7,7 +7,7 @@ def createDocument(shoppingList, menu):
 
     today = date.today()
 
-    shoppingTitle = document.add_heading(f"Shopping List: Week of Sunday, {today.strftime('%B')} {today.strftime('%d')}, {today.strftime('%Y')}", 0)
+    shoppingTitle = document.add_heading(f"Shopping List: Week of {today.strftime('%A')}, {today.strftime('%B')} {today.strftime('%d')}, {today.strftime('%Y')}", 0)
     shoppingTitle.alignment = 1
 
     keys = ["Meats", "Poultry", "Dairy", "Vegetables", "Bakery", "Pastas", "Spices", "Snacks", "Other"]
