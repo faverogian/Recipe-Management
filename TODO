@@ -1,0 +1,7 @@
+1. Allow users to enter in new recipes AND sides
+    a. Make ingredient reference robust enough to use as a checker against the input
+
+2. Allow users to delete recipes
+    a. And/or edit them
+
+3. User entry of schedule preferences (create default if none entered)

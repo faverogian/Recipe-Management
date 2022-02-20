@@ -1,0 +1,159 @@
+{
+    "Users" :
+    [
+        {
+            "Name" : "Gian",
+            "Schedule" : {"Monday": "Pasta", "Tuesday": "Meat", "Wednesday": "Pasta", "Thursday": "Quick", "Friday": "Pasta"},
+            "Meals" : 
+            {
+                "Meats" : 
+                [
+                    {
+                        "Name" : "Veal Chops",
+                        "Ingredients" : ["Veal Chops", "Salt", "Pepper", "Garlic", "Olive Oil"],
+                        "Companions" : ["Salad", "Canned Corn", "Vegetable Medley", "Carrots"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Salt and Pepper Bistechette",
+                        "Ingredients" : ["Veal Scallopini", "Salt", "Pepper", "Garlic", "Olive Oil"],
+                        "Companions" : ["Salad", "Boiled Zucchini"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Breaded Cutlets",
+                        "Ingredients" : ["Veal Scallopini", "Salt", "Pepper", "Olive Oil", "Eggs", "Flour", "Breadcrumbs"],
+                        "Companions" : ["Salad", "Canned Corn", "Vegetable Medley"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "American Steak",
+                        "Ingredients" : ["Steak", "Salt", "Pepper", "Garlic", "Olive Oil"],
+                        "Companions" : ["Salad", "Canned Corn", "Vegetable Medley", "Carrots"],
+                        "Link" : ""
+                    }
+                ], 
+                "Pastas" :
+                [
+                    {
+                        "Name" : "Ricotta and Broccoli",
+                        "Ingredients" : ["Ditali", "Ricotta", "Broccoli Florets", "Olive Oil", "Pepper", "Parmigiano"],
+                        "Companions" : [],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Carbonara",
+                        "Ingredients" : ["Spaghetti", "Bacon", "Eggs", "Parmigiano", "Pepper"],
+                        "Companions" : ["Salad", "Boiled Zucchini"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Cacio e Pepe",
+                        "Ingredients" : ["Spaghetti", "Parmigiano", "Pecorino", "Pepper"],
+                        "Companions" : ["Salad", "Boiled Zucchini"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Aglio Olio",
+                        "Ingredients" : ["Spaghetti", "Garlic", "Olive Oil", "Parmigiano", "Pepper"],
+                        "Companions" : ["Salad"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Pomodori",
+                        "Ingredients" : ["Tomatoes", "Onion", "Garlic", "Basil", "Olive Oil", "Salt", "Pepper", "Penne", "Parmigiano"],
+                        "Companions" : ["Salad"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Bianco",
+                        "Ingredients" : ["Asparagus", "Peas", "Onion", "Garlic", "Olive Oil", "Salt", "Pepper", "Parmigiano", "Ditali"],
+                        "Companions" : [],
+                        "Link" : ""
+                    }
+                ],
+                "Quick" :
+                [
+                    {
+                        "Name" : "Lipton Chicken Noodle Soup",
+                        "Ingredients" : ["Lipton Envelope", "Eggs", "Parmigiano"],
+                        "Companions" : [],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Fritatta",
+                        "Ingredients" : ["Eggs", "Butter", "Milk", "Onion", "Zucchini", "Salt", "Pepper"],
+                        "Companions" : [],
+                        "Link" : ""
+                    }
+                ],
+                "Sides" :
+                [
+                    {
+                        "Name" : "Salad",
+                        "Ingredients" : ["Romaine Lettuce", "Salt", "Pepper", "Olive Oil",
+                                        "White Balsamic Vinegar", "Tomatoes"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Boiled Zucchini",
+                        "Ingredients" : ["Zucchini", "Salt", "Pepper", "Olive Oil", "White Vinegar"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Canned Corn",
+                        "Ingredients" : ["Corn", "Butter"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Vegetable Medley",
+                        "Ingredients" : ["Vegetable Medley", "Butter"],
+                        "Link" : ""
+                    },
+                    {
+                        "Name" : "Carrots",
+                        "Ingredients" : ["Baby Carrots", "Butter", "Salt", "Pepper"],
+                        "Link" : ""
+                    }
+                ]
+            },
+            "Ingredient Classes" :
+            {
+                "Spices" : ["Allspice", "Salt", "Pepper", "Cayenne Pepper", "Chili Powder", "Cinnamon", 
+                            "Cumin", "Curry", "Garlic Powder", "Onion Powder", "Oregano", "Rosemary",
+                            "Paprika", "Saffron", "Sage", "Thyme", "Vanilla", "Nutmeg", "Anise", 
+                            "Cardamom", "Coriander", "Fennel", "Ginger", "Mace", "Mustard Seed", "Turmeric",
+                            "Jerk", "Cajun", "Sugar", "Seasoned Salt"],
+
+                "Meats" : ["Bacon", "Steak", "Veal Scallopini", "Veal Chops", "Tomahawk", "Filet Mignon", 
+                           "New York Strip", "Sirloin", "Lamb Shank", "Lamb Rack", "Pork Loin",
+                           "Pork Chops", "Pork Tenderloin", "Pork Ribs", "Baby Back Ribs", "Back Ribs", "Spare Ribs",
+                           "Prosciutto", "Turkey Breast", "Ham", "Turkey", "Sausage", "Ground Beef", "Ground Pork",
+                           "Ground Veal"],
+
+                "Poultry" : ["Eggs", "Lipton Envelope", "Chicken Breast", "Chicken Thighs", "Chicken Wings",
+                             "Chicken Drumbsticks", "Chicken Tenderloin", "Chicken Nuggets"],
+
+                "Dairy" : ["Milk", "Butter", "Parmasean", "Pecorino", "Ricotta", "Provolone", "Mozzarella", "Cheddar",
+                           "Marble", "Cream", "Sour Cream", "Yogurt", "Greek Yogurt"],
+
+                "Bakery" : ["White Bread", "Toast Bread", "Buns", "Baguette", "Flour", "Breadcrumbs"],
+
+                "Vegetables" : ["Asparagus", "Corn", "Vegetable Medley", "Peas", "Onion", "Red Onion", "Garlic", "Romaine Lettuce",
+                                "Zucchini", "Baby Carrots", "Carrots", "Broccoli Florets", "Tomato", "Tomatoes", "Beefsteak Tomato", 
+                                "Roma Tomato", "Basil", "Mushrooms", "Potatoes", "Red Pepper", "Green Pepper", "Broccoli", 
+                                "Lemon", "Lime", "Celery", "Spinach", "Green Onion", "Cauliflower", "Cabbage", "Avocado",
+                                "Cilantro", "Parsley", "Shalots", "Dill"],
+
+                "Pastas" : ["Spaghetti", "Ditali", "Penne", "Fettucine", "Farfalle", "Rotini", "Rice"],
+
+                "Dressings" : ["Olive Oil", "White Balsamic Vinegar", "White Vinegar", "Balsamic Vinegar", "Ranch", "Ketchup",
+                            "Mustard", "Relish", "Honey Mustard", "Teriaki", "Soy Sauce", "Chipotle", "Sriracha", 
+                            "BBQ Sauce", "Rice Vinegar", "Honey", "Sweet and Sour", "Sesame Oil", "Sweet and Sour", 
+                            "Worchestershire", "Mayonnaise"],
+                
+                "Snacks" : ["Granola Bars", "Fishie Crackers", "Nutella", "Lunch Meat"]
+            }
+        }
+    ]
+}
