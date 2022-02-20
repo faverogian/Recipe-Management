@@ -1,0 +1,118 @@
+{
+    "Meals" : 
+    {
+        "Meats" : 
+        [
+            {
+                "Name" : "Veal Chops",
+                "Ingredients" : ["Veal Chops", "Salt", "Pepper", "Garlic", "Olive Oil"],
+                "Companions" : ["Salad", "Canned Corn", "Vegetable Medley", "Carrots"]
+            },
+            {
+                "Name" : "Salt and Pepper Bistechette",
+                "Ingredients" : ["Veal Scallopini", "Salt", "Pepper", "Garlic", "Olive Oil"],
+                "Companions" : ["Salad", "Boiled Zucchini"]
+            },
+            {
+                "Name" : "Breaded Cutlets",
+                "Ingredients" : ["Veal Chops", "Salt", "Pepper", "Olive Oil", "Eggs", "Flour", "Bread Crumbs"],
+                "Companions" : ["Salad", "Canned Corn", "Vegetable Medley"]
+            },
+            {
+                "Name" : "American Steak",
+                "Ingredients" : ["Steak", "Salt", "Pepper", "Garlic", "Olive Oil"],
+                "Companions" : ["Salad", "Canned Corn", "Vegetable Medley", "Carrots"]
+            }
+        ], 
+        "Pastas" :
+        [
+            {
+                "Name" : "Ricotta and Broccoli",
+                "Ingredients" : ["Ditali", "Ricotta", "Broccoli Florets", "Olive Oil", "Pepper", "Parmigiano"],
+                "Companions" : []
+            },
+            {
+                "Name" : "Carbonara",
+                "Ingredients" : ["Spaghetti", "Bacon", "Eggs", "Parmigiano", "Pepper"],
+                "Companions" : ["Salad", "Boiled Zucchini"]
+            },
+            {
+                "Name" : "Cacio e Pepe",
+                "Ingredients" : ["Spaghetti", "Parmigiano", "Pecorino", "Pepper"],
+                "Companions" : ["Salad", "Boiled Zucchini"]
+            },
+            {
+                "Name" : "Aglio Olio",
+                "Ingredients" : ["Spaghetti", "Garlic", "Olive Oil", "Parmigiano", "Pepper"],
+                "Companions" : ["Salad"]
+            },
+            {
+                "Name" : "Pomodori",
+                "Ingredients" : ["Tomatoes", "Onion", "Garlic", "Basil", "Olive Oil", "Salt", "Pepper", "Penne", "Parmigiano"],
+                "Companions" : ["Salad"]
+            },
+            {
+                "Name" : "Bianco",
+                "Ingredients" : ["Asparagus", "Peas", "Onion", "Garlic", "Olive Oil", "Salt", "Pepper", "Parmigiano", "Ditali"],
+                "Companions" : []
+            }
+        ],
+        "Quick" :
+        [
+            {
+                "Name" : "Lipton Chicken Noodle Soup",
+                "Ingredients" : ["Lipton Envelope", "Eggs", "Parmigiano"],
+                "Companions" : []
+            },
+            {
+                "Name" : "Chicken Nuggets",
+                "Ingredients" : ["Chicken Nuggets"],
+                "Companions" : ["Salad"]
+            },
+            {
+                "Name" : "Fritatta",
+                "Ingredients" : ["Eggs", "Butter", "Milk", "Onion", "Zucchini", "Salt", "Pepper"],
+                "Companions" : []
+            }
+        ],
+        "Sides" :
+        [
+            {
+                "Name" : "Salad",
+                "Ingredients" : ["Romaine Lettuce", "Salt", "Pepper", "Olive Oil",
+                                 "White Balsamic Vinegar", "Tomatoes"]
+            },
+            {
+                "Name" : "Boiled Zucchini",
+                "Ingredients" : ["Zucchini", "Salt", "Pepper", "Olive Oil", "White Vinegar"]
+            },
+            {
+                "Name" : "Canned Corn",
+                "Ingredients" : ["Corn", "Butter"]
+            },
+            {
+                "Name" : "Vegetable Medley",
+                "Ingredients" : ["Vegetable Medley", "Butter"]
+            },
+            {
+                "Name" : "Carrots",
+                "Ingredients" : ["Baby Carrots", "Butter", "Salt", "Pepper"]
+            }
+        ]
+    },
+    "Ingredient Classes" :
+    {
+        "Spices" : ["Salt", "Pepper"],
+        "Meats" : ["Bacon", "Steak", "Veal Scallopini", "Veal Chops"],
+        "Poultry" : ["Eggs", "Lipton Envelope"],
+        "Dairy" : ["Milk", "Butter", "Parmigiano", "Pecorino", "Ricotta"],
+        "Bakery" : ["White Bread", "Baguette", "Flour"],
+        "Vegetables" : ["Asparagus", "Corn", "Vegetable Medley",
+                        "Peas", "Onion", "Garlic", "Romaine Lettuce", "Zucchini",
+                        "Baby Carrots", "Broccoli Florets", "Tomato", "Tomatoes",
+                        "Basil", "Mushrooms"],
+        "Pastas" : ["Spaghetti", "Ditali", "Penne"],
+        "Frozen" : ["Chicken Nuggets", "Frozen Pizza"],
+        "Other" : ["Olive Oil", "White Balsamic Vinegar", "White Vinegar"]
+    }
+}
