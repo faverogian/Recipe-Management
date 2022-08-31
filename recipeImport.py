@@ -1,8 +1,13 @@
-import pandas as pd
+'''
+Recipe Manager
+Recipe Book Class
+Gian Favero
+2022
+'''
 
 class recipeBook:
-    def __init__(self, path):
-        self.path = path
+    def __init__(self, json_db):
+        self.db = json_db
         self.foodGenres = ["Pastas", "Meats", "Quick", "Sides"]
         self.foodList = {}
         self.ingredientRef = {}
@@ -15,16 +20,13 @@ class recipeBook:
     
     def updateFoodLists(self):
         for genre in self.foodGenres:
-            self.foodList[f"{genre}"] = pd.read_excel(self.path + "/Food Lists.xlsx", sheet_name=f"{genre}")[f"{genre}"].to_list()
-
-        for key in self.foodList:
-            for dish in self.foodList[key]:
-                self.ingredientList[dish] = pd.read_excel(self.path + f"/{key}.xlsx", sheet_name=f"{dish}")["Ingredients"].to_list()
-                if key != "Sides":
-                        companions = pd.read_excel(self.path + f"/{key}.xlsx", sheet_name=f"{dish}")["Companion"].to_list()
-                        self.companionList[dish] = [x for x in companions if str(x) != 'nan']
+            self.foodList[genre] = []
+            for item in self.db["Meals"][genre]:
+                self.foodList[genre].append(item["Name"])
+                self.ingredientList[item["Name"]] = item["Ingredients"]
+                if genre != "Sides":
+                    self.companionList[item["Name"]] = item["Companions"]
 
     def updateIngredientRef(self):
-        self.ingredientRef = pd.read_excel(self.path + "/Ingredient Classes.xlsx", sheet_name="IngredientRef")
-        self.ingredientRef = dict(zip(self.ingredientRef.Ingredient, self.ingredientRef.Class))
+        self.ingredientRef = self.db["Ingredient Classes"]
 

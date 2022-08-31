@@ -1,12 +1,23 @@
+'''
+Recipe Manager
+Application Class
+Gian Favero
+2022
+'''
+
+# Project Imports
 from recipeImport import recipeBook
 from menuGeneration import weeklyMenuGenerator
+
+# Python Imports
 from docxOutput import createDocument
 from docx2pdf import convert
+import json
 
-path = r"C:/Users/gmari/OneDrive - University of Windsor/Recipe Management/Spreadsheets"
+json_db = json.load(open('db_recipes.json'))
 
-updatedRecipes = recipeBook(path)
-weekMenu = weeklyMenuGenerator(path, updatedRecipes.contents)
+updatedRecipes = recipeBook(json_db)
+weekMenu = weeklyMenuGenerator(updatedRecipes.contents)
 createDocument(weekMenu.shoppingList, weekMenu.menu)
-convert("C:/Users/gmari/OneDrive - University of Windsor/Recipe Management/Outputs/This_Week_In_Food.docx", 
-        "C:/Users/gmari/OneDrive - University of Windsor/Recipe Management/Outputs/This_Week_In_Food.pdf")
+convert("Outputs/This_Week_In_Food.docx", 
+        "Outputs/This_Week_In_Food.pdf")

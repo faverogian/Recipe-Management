@@ -1,3 +1,11 @@
+'''
+Recipe Manager
+Docx Output Class
+Gian Favero
+2022
+'''
+
+# Python Imports
 from docx import Document
 from docx.shared import Pt
 from datetime import date
@@ -37,4 +45,4 @@ def createDocument(shoppingList, menu):
         except:
             pass
 
-    document.save(r"C:/Users/gmari/OneDrive - University of Windsor/Recipe Management/Outputs/This_Week_In_Food.docx")
+    document.save(r"Outputs/This_Week_In_Food.docx")
