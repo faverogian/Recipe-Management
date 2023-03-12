@@ -60,3 +60,6 @@ docs/_build/
 
 # venv
 env/
+
+# Project
+Outputs/
