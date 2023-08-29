@@ -47,21 +47,20 @@ class weeklyMenuGenerator:
 
     def pickMeals(self):
         for day in self.days:
-            match self.days[day]:
-                case "meat":
-                    while True:
-                        [primary,side] = self.meatChoice()
-                        if primary not in self.dishList:
-                            break
+            if self.days[day] == "meat":
+                while True:
+                    [primary,side] = self.meatChoice()
+                    if primary not in self.dishList:
+                        break
 
-                case "pasta":
-                    while True:
-                        [primary, side] = self.pastaChoice()
-                        if primary not in self.dishList:
-                            break
+            elif self.days[day] == "pasta":
+                while True:
+                    [primary, side] = self.pastaChoice()
+                    if primary not in self.dishList:
+                        break
 
-                case "quick":
-                    [primary, side] = self.quickChoice()
+            elif self.days[day] == "quick":
+                [primary, side] = self.quickChoice()
 
             self.dishList += [primary, side]
             if side != "":
@@ -88,5 +87,4 @@ class weeklyMenuGenerator:
         if "Milk" not in self.shoppingList["Dairy"]:
             self.shoppingList["Dairy"] += ["Milk"]
         self.shoppingList["Bakery"] += ["Baguette"]
-        self.shoppingList["Snacks"] += ["Granola Bars", "Fishie Crackers", "Nutella", "Lunch Meat"]
         self.shoppingList = dict(self.shoppingList)
